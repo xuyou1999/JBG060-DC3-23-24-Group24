@@ -2,7 +2,7 @@
 # Code Description and Execution Order
 This repository, forked from the course JBG060, features a range of computational notebooks and scripts focused on data analysis and modeling. The primary components include topic modeling, IPC estimation, data merging, and time-series forecasting. The sequence of execution for these notebooks is as follows:
 1. `topic_discovery.ipynb` - Topic discovery using BERTopic and GPT API.
-2. `Ida_model.ipynb`
+2. `Ida_model.ipynb` - Topic analysis on 10 top trendy topics over years.
 3. `IPC estimation.ipynb` - Interpolation of IPC data.
 4. `merge_article_food.ipynb` - Merging datasets geospatially.
 5. `Time-series.ipynb` - Time-series forecasting.
@@ -10,6 +10,7 @@ This repository, forked from the course JBG060, features a range of computationa
 ## Detailed Workflow
 ### Topic Modeling
 - `topic_discovery.ipynb`: Analyzes the relativity of topics to articles using BERTopic and GPT API. Results are stored in the `data` folder. Note: API key is hidden for security reasons, and you will need your own to replicate the process.
+- `Ida_model.ipynb`: Analyzes the top 10 trendy topics from each year's news articles collection using BERTopic. This is helpful in understanding the outstanding topic trends for better topic refinement.
 
 ### Geodata Information
 - New geodata is derived using `conties_and_regions_for_articles.ipynb`, `counties_and_regions_for_food_crises_clean.ipynb`, and `regions_for_articles.ipynb`, located in the `geodata` folder.
