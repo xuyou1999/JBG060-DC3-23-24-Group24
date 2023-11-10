@@ -1,8 +1,16 @@
-# South Sudan Project 
-## Code description
-You are provided with two notebooks and the necessary data to help you start the South Sudan project. First, run _topic_modelling.ipynb_. In this notebook, a BERTopic model is fit on _articles_summary_cleaned.csv_, then four categories/keywords (hunger, refugees, humanitarian, and conflict) are defined. These categories are used for categorising articles (or none if the article doesn’t match any of the categories) and thus creating features from the news articles. Secondly, run the _predictions.ipynb_ notebook for some very basic data exploration, along with fitting several linear models on the data, with- and without the news features. The notebook uses the _food_crises_cleaned.csv_ dataset and the csv file obtained from the  _topic_modelling.ipynb_ notebook.
+# Repository forked from the course JBG060 
 
-## Requirements
+## Code description
+The work done includes (INSERT TOPIC MODELLING PARTS), and the interpolation of IPC ("IPC estimation.ipynb"). The topic modelling and IPC interpolation each generate a data set, merged geospatially ("merge_article_food.ipynb") into "food_crises_interpol_news.csv". This data is then used for time-series forecasting ("Time-series.ipynb").
+
+## Order of code execution
+1) "topic_discovery.ipynb"
+2) "Ida_model.ipynb"
+3) "IPC estimation.ipynb"
+4) "merge_article_food.ipynb"
+5) "Time-series.ipynb"
+
+## Requirements and troubleshooting
 To install the requirements open Terminal (macOS)/Command Prompt (Windows) and run pip install -r requirements.txt. If you create a new environment in PyCharm, an icon should appear to install requirements. The code runs with Python 3.9.16.
 
 Required libraries:
@@ -12,8 +20,6 @@ Required libraries:
 - matplotlib == 3.7.2 
 - seaborn == 0.12.2
 - statsmodels == 0.14.0 
-
-## Troubleshooting
 
 If you encounter any issues while running the notebooks, try the following:
 - check that you have all the necessary libraries installed and the correct versions of them
